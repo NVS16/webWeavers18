@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>To Do List</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+      .checked td{
+          color : red !important;
+      }
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>To Do List</h2>
+  <p>Enter List Items Here : </p>            
+  <div class="input-group">
+    <input class = "form-control" type="text" id="input">
+    <div class="input-group-btn">
+        <button class="btn btn-success" id="add">ADD</button>
+    </div>
+  </div>
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th>Message</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="list">
+    </tbody>
+  </table>
+</div>
+
+<script src="./js/main.js"></script>
+</body>
+</html>
+
